@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooter 2D: Menú y Juego</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menú principal -->
+    <header id="menu" style="display: block;">
+        <h1>Shooter 2D: Desafío de los Zombis</h1>
+        <button id="startGame">Jugar</button>
+        <button id="showScores">Ver Puntajes</button>
+        <button id="logout">Cerrar Sesión</button>
+    </header>
+
+    <!-- Contenedor del Juego -->
+    <main id="gameContainer" style="display: none;">
+        <div class="score">Puntuación: <span id="score">0</span></div>
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- Pantalla de Game Over -->
+        <section id="gameOverScreen" style="display: none;">
+            <h2>¡Juego Terminado!</h2>
+            <p>Puntuación final: <span id="finalScore">0</span></p>
+            <button id="restart">Reiniciar</button>
+            <button id="backToMenu">Volver al Menú</button>
+        </section>
+    </main>
+
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
